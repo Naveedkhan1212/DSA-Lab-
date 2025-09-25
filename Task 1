@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{ // this program uses pointer to find the total of all items 
+	float price1=50.0, price2=30.0,price3=40.0;
+	int q1,q2,q3;
+	int *p1=&q1,*p2=&q2, *p3=&q3;
+	
+	cout<<"the price of item1 is "<<price1<<endl;
+	cout<<"the price of item2 is"<<price2<<endl;
+	cout<<"the price of item3 is"<<price3<<endl;
+	
+	cout<<"enter quantity of item1:";
+	cin>>*p1;
+	cout<<"\nenter quantity of item 2:";
+	cin>>*p2;
+	cout<<"\n enter quantity of item3:";
+	cin>>*p3;
+
+	float Total=(price1)*(*p1)+(price2)*(*p2)+(price3)*(*p3);
+		cout<<"\n----------Cafe Bill----------"<<endl;
+	cout<<"The total is ="<<Total;
+	
+	
+	
+}
